@@ -47,20 +47,22 @@ export const OPS_MODULES = [
         },
         {
           id: 'visual-wbs',
-          title: 'Work Breakdown Structure (Filtered)',
-          preview: 'Detailed tasks and timing for visual curation and talent scouting.',
+          title: 'Work Breakdown Structure',
+          preview: 'this is a breakdown of tasks and timing for visual curation and ',
           type: 'detailed-table',
           columns: ['date', 'Task', 'how you come in'],
           rows: [
             // PRE-BARAKOA
-            { phase: 'PRE-BARAKOA', timing: '(W1)', task: 'Provide assets for Barakoa\'s digital identity', owner: 'Contributor' },
-            { phase: 'PRE-BARAKOA', timing: '(W2)', task: 'Identify and recommend aligned indie talent', owner: 'Lead' },
-            { phase: 'PRE-BARAKOA', timing: '(W3)', task: 'Align visual tone with inquiry', owner: 'Contributor' },
+            { phase: 'PRE-BARAKOA-PHASE 1', timing: '(W1)', task: 'Provide assets for Barakoa\'s digital identity', owner: 'Contributor' },
+            { phase: 'PRE-BARAKOA-PHASE 1', timing: '(W2)', task: 'Virtual meeting to develop your creative and curatorial role', owner: 'Contributor' },
+            { phase: 'PRE-BARAKOA-PHASE 1', timing: '(W3)', task: 'Present your proposed direction to the Barakoa team', owner: 'Contributor' },
+            { phase: 'PRE-BARAKOA-PHASE 1', timing: '(W4)', task: 'Implementation begins as agreed', owner: 'Lead' },
 
             // PRE-GATHERINGS & TEASERS
-            { phase: 'TEASERS & BTS CONTENT CREATION', timing: '(W4)', task: 'Creation of digital media content to build anticipation', owner: 'Lead' },
-            { phase: 'TEASERS & BTS CONTENT CREATION', timing: '(W5)', task: 'Documentation of any behind-the-scenes moments', owner: 'Lead' },
-            { phase: 'TEASERS & BTS CONTENT CREATION', timing: '(W6)', task: 'Spread the word about Barakoa', owner: 'Support' },
+            {phase: 'PRE-BARAKOA-PHASE 2', timing: 'scouting phase', task: 'Scout and confirm indie artists and performers', owner: 'Lead' },
+            { phase: 'PRE-BARAKOA-PHASE 2', timing: 'marketing & advocacy phase', task: 'Creation of digital media content to build anticipation', owner: 'Lead' },
+            { phase: 'PRE-BARAKOA-PHASE 2', timing: 'behind-the-scenes phase', task: 'Documentation of any behind-the-scenes moments', owner: 'Lead' },
+            { phase: 'PRE-BARAKOA-PHASE 2', timing: 'community outreach phase', task: 'Spread the word about Barakoa', owner: 'Support' },
 
             // PERI-BARAKOA
             { phase: 'PERI-BARAKOA (MAY & JUNE)', timing: 'Event Day', task: 'Oversee visual documentation and editing', owner: 'Lead' },
@@ -68,8 +70,8 @@ export const OPS_MODULES = [
             { phase: 'PERI-BARAKOA (MAY & JUNE)', timing: 'Event Day', task: 'Hold intimacy & consent in visuals', owner: 'Lead' },
 
             // POST-BARAKOA
-            { phase: 'POST-BARAKOA', timing: 'Week 3–4', task: 'Deliver visual archive', owner: 'Lead' },
-            { phase: 'POST-BARAKOA', timing: 'Week 5–6', task: 'Provide advocacy-ready imagery', owner: 'Contributor' }
+            { phase: 'POST-BARAKOA', timing: '(W3/W4)', task: 'Deliver visual archive', owner: 'Lead' },
+            { phase: 'POST-BARAKOA', timing: '(W5/W6)', task: 'Provide advocacy-ready imagery', owner: 'Contributor' }
           ]
         }
       ]
